@@ -32,7 +32,6 @@ model, device = load_model()
 # = Image selection =
 st.write("### Sample Images")
 SAMPLE_IMAGE = {
-    "Select a sample..." : "",
     "Sample 1: Defective" : "test_image/cast_def_0_15.jpeg",
     "Sample 2: Defective" : "test_image/cast_def_0_61.jpeg",
     "Sample 3: Defective" : "test_image/cast_def_0_218.jpeg",
@@ -46,7 +45,7 @@ image_to_process = None
 
 if uploaded_image is not None:
     image_to_process = Image.open(uploaded_image).convert("RGB").resize((224,224))
-elif selected_sample_image != "Select a sample...":
+else:
     sample_path = SAMPLE_IMAGE[selected_sample_image]
     image_to_process = Image.open(sample_path).convert("RGB").resize((224,224))
 
