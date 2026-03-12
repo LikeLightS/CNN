@@ -9,7 +9,7 @@ This project is organized into sequantial scripts:
 * **`2_predict_single.py`** - Using trained model on one images of the defected metal casting.
 * **`3_predict_test.py`** - Runs model testing on testing data and display the performance/accuracy of the model.
 * **`4_explain.py`** - Using Grad_CAM to generate heatmap, justifying the model's prediction by highlighting parts of the image the model used for prediction.
-* **`5_web_app.py`** - Simple **Streamlit** web application that allows user to test the model to see the predictions and heatmap.
+* **`5_web_app.py`** - Simple **Streamlit** web application that allows user to test the model to see the predictions and heatmap. [Link to the Streamlit Web App](https://cnn-metal-casting.streamlit.app)
 
 ---
 
@@ -22,7 +22,7 @@ The `4_explain.py` uses Grad_CAM to generate heatmap highlight the parts of the 
 ![Grad_CAM output on defected metal casting](output/explain_output.png)
 
 ## Running this project
-You can test the model by viewing the [Streamlit website]() or run the model on your personal computer following these steps:
+You can test the model by viewing the [Streamlit website](https://cnn-metal-casting.streamlit.app) or run the model on your personal computer following these steps:
 
 **1. Clone the repository and navigate to the directory.**
     git clone [https://github.com/LikeLightS/CNN](https://github.com/LikeLightS/CNN)
