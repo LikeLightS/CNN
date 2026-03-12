@@ -1,0 +1,6 @@
+.venv/
+casting_data/
+
+__pycache__/
+
+Doc.docx
