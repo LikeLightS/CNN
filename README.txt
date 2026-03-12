@@ -1,14 +1,22 @@
-This is a personal project on testing CNN (Convolutional Neural Network) on metal casting data to detect defects on the casting.
-The data can be found in "https://www.kaggle.com/datasets/ravirajsinh45/real-life-industrial-dataset-of-casting-product".
+# Metal Casting Defect Detection
+This is a personal machine learning project that fine-tune Convolutional Neural Network (CNN) to automate quality control. This model is trained to inspect images of metal castings and accurately detect and label defects.
 
-Files in this folder.
-1_training.py - Trains the model with ResNet18 using the dataset provided to be specialized in detecting defects on metal casting.
-2_predict_single.py - Using trained model to predict one images of the defected metal casting.
-3_predict_test.py - Runs model testing on the trained model and output the performance/accuracy of the model on test dataset.
-4_explain.py - Justification on the performance of the trained model.
-5_web_app.py - Display the output onto a website using streamlit.
+**Dataset**[Metal Casting Dataset on Kaggle](https://www.kaggle.com/datasets/ravirajsinh45/real-life-industrial-dataset-of-casting-product)
 
-Conclusion
-The 3_predict_test.py output shows the model accuracy score of 99.3%, correctly predict 710 images out of 715.
-The 4_explain.py output shows the model correctly predicts using the right information; cracks, malformed, parts of the images as indicated by the red and orange region of the heatmap.
-![Output from 4_explain.py showing heatmap over the image](output/explain_output.png)
+## Project Structure
+This project is organized into sequantial scripts:
+* **`1_training.py`** - Trains the model using pre-trained **ResNet18**, specializing into detecting defects on metal casting.
+* **`2_predict_single.py`** - Using trained model on one images of the defected metal casting.
+* **`3_predict_test.py`** - Runs model testing on testing data and display the performance/accuracy of the model.
+* **`4_explain.py`** - Using Grad_CAM to generate heatmap, justifying the model's prediction by highlighting parts of the image the model used for prediction.
+* **`5_web_app.py`** - Simple **Streamlit** web application that allows user to test the model to see the predictions and heatmap.
+
+---
+
+## Conclusion
+### Model Accuracy
+The `3_predict_test.py` confirms the model is highly effective. Scoring of 99.3% accuracy, correctly predict 710 images out of 715.
+
+### Justification on Accuracy
+The `4_explain.py` uses Grad_CAM to generate heatmap highlight the parts of the image the model uses for prediction. The resulting heatmap confirms the model correctly focuses on defects such as cracks or malformed egdes indicated by the orange-red regions.
+![Grad_CAM output on defected metal casting](output/explain_output.png)
