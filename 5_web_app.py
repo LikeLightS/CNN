@@ -51,7 +51,7 @@ elif selected_sample_image != "Select a sample...":
     image_to_process = Image.open(sample_path).convert("RGB").resize((224,224))
 
 if image_to_process is None: # Default
-    image_to_process = Image.open("casting_data/test/def_front/cast_def_0_15.jpeg").convert("RGB").resize((224,224))
+    image_to_process = Image.open("test_image/cast_def_0_15.jpeg").convert("RGB").resize((224,224))
 
 # = Predictions =
 test_transform = transforms.Compose([transforms.ToTensor()])
