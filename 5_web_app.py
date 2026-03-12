@@ -33,11 +33,11 @@ model, device = load_model()
 st.write("### Sample Images")
 SAMPLE_IMAGE = {
     "Select a sample..." : "",
-    "Sample 1: Defective" : "casting_data/test/def_front/cast_def_0_15.jpeg",
-    "Sample 2: Defective" : "casting_data/test/def_front/cast_def_0_61.jpeg",
-    "Sample 3: Defective" : "casting_data/test/def_front/cast_def_0_218.jpeg",
-    "Sample 4: OK" : "casting_data/test/ok_front/cast_ok_0_235.jpeg",
-    "Sample 5: OK" : "casting_data/test/ok_front/cast_ok_0_942.jpeg"
+    "Sample 1: Defective" : "test_image/cast_def_0_15.jpeg",
+    "Sample 2: Defective" : "test_image/cast_def_0_61.jpeg",
+    "Sample 3: Defective" : "test_image/cast_def_0_218.jpeg",
+    "Sample 4: OK" : "test_image/cast_ok_0_235.jpeg",
+    "Sample 5: OK" : "test_image/cast_ok_0_942.jpeg"
 }
 
 uploaded_image = st.file_uploader("Upload casting image (JPG/PNG)...", type=["JPEG", "JPG", "PNG"])
