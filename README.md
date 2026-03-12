@@ -20,3 +20,17 @@ The `3_predict_test.py` confirms the model is highly effective. Scoring of 99.3%
 ### Justification on Accuracy
 The `4_explain.py` uses Grad_CAM to generate heatmap highlight the parts of the image the model uses for prediction. The resulting heatmap confirms the model correctly focuses on defects such as cracks or malformed egdes indicated by the orange-red regions.
 ![Grad_CAM output on defected metal casting](output/explain_output.png)
+
+## Running this project
+You can test the model by viewing the [Streamlit website]() or run the model on your personal computer following these steps:
+
+** 1. Clone the repository and navigate to the directory.
+    git clone [https://github.com/LikeLightS/CNN](https://github.com/LikeLightS/CNN)
+
+** 2. Create vitual environment using `uv` and install required dependencies.
+    pip install uv
+    uv venv
+    uv pip install -r requirements.txt
+
+** 3. Run Streamlit Web App
+    streamlit run 5_web_app.py
