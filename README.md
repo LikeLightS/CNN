@@ -1,7 +1,7 @@
 # Metal Casting Defect Detection
 This is a personal machine learning project that fine-tune Convolutional Neural Network (CNN) to automate quality control. This model is trained to inspect images of metal castings and accurately detect and label defects.
 
-**Dataset**[Metal Casting Dataset on Kaggle](https://www.kaggle.com/datasets/ravirajsinh45/real-life-industrial-dataset-of-casting-product)
+**Dataset** [Metal Casting Dataset on Kaggle](https://www.kaggle.com/datasets/ravirajsinh45/real-life-industrial-dataset-of-casting-product)
 
 ## Project Structure
 This project is organized into sequantial scripts:
@@ -24,13 +24,13 @@ The `4_explain.py` uses Grad_CAM to generate heatmap highlight the parts of the 
 ## Running this project
 You can test the model by viewing the [Streamlit website]() or run the model on your personal computer following these steps:
 
-** 1. Clone the repository and navigate to the directory.
+**1. Clone the repository and navigate to the directory.**
     git clone [https://github.com/LikeLightS/CNN](https://github.com/LikeLightS/CNN)
 
-** 2. Create vitual environment using `uv` and install required dependencies.
+**2. Create vitual environment using `uv` and install required dependencies.**
     pip install uv
     uv venv
     uv pip install -r requirements.txt
 
-** 3. Run Streamlit Web App
+**3. Run Streamlit Web App**
     streamlit run 5_web_app.py
